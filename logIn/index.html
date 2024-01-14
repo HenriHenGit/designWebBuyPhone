@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../vendor/fontawesome-free-5.8.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">MaiCG<div class="logo-phu">technology</div></a>
+        <div class="icon" onclick="toggleMenu();"><i class="fas fa-align-justify"></i></div>
+        <ul class="navigation">
+            <li><a href="../index.html" onclick="toggleMenu();">Trang chủ</a></li>
+            <li><a href="../index.html#menu" onclick="toggleMenu();">Loại sản phẩm</a></li>
+            <li><a href="../index.html#product" onclick="toggleMenu();">Sản phẩm</a></li>
+            <li><a href="../carts/index.html" onclick="toggleMenu();"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+            <li><a href="../transactionHistory/index.html" onclick="toggleMenu();">Lịch sử giao dịch</a></li>
+            <li><a href="./index.html" onclick="toggleMenu();">Đăng nhập</a></li>
+        </ul>
+    </header>
+    <div class="distance"></div>
+    <div class="login-register">
+    <div class="logIn" id="logIn">
+        <a class="bottom" href="#">Đăng nhập</a>
+        <a class="bottom" href="#" >Đăng kí</a>
+        <div class="logIn-contact register-contact">
+            <form id="loginForm" name="loginForm">
+                <p>Tên</p>
+            <div class="input">
+                <input id="name" type="text" minlength="10" placeholder="Tên đăng nhập">
+                <span class="fMess"></span>
+            </div>
+            <p>Mật khẩu</p>
+            <div class="input">
+                <input id="passW" type="text" minlength="10" placeholder="Mật khẩu">
+                <span class="fMess"></span>
+            </div>
+            <div class="input">
+                <input type="submit" value="Đăng nhập tài khoản">
+            </div>
+        </form>
+
+
+        <form id="regForm" method="POST" class="form" name="regForm">
+            <p>Tài khoản</p>
+            <div class="input">
+                <input id="account" class="formInput" type="text" minlength="10" placeholder="Tài khoản *">
+                <span class="fMess"></span>
+            </div>
+            <p>Họ và tên</p>
+            <div class="input">
+                <input id="full-name" class="formInput"  type="text" minlength="10" placeholder="Họ và tên *">
+                <span class="fMess"></span>
+            </div>
+            <p>Mật khẩu</p>
+            <div class="input">
+                <input id="pass" class="formInput"  type="password" minlength="10" placeholder="Mật khẩu *">
+                <span class="fMess"></span>
+            </div>
+            <p>Nhập lại mật khẩu</p>
+            <div class="input">
+                <input id="retype-pass" class="formInput"  type="password" minlength="10" placeholder="Nhập lại mật khẩu *">
+                <span class="fMess"></span>
+            </div>
+            <p>Email</p>
+            <div class="input">
+                <input id="email" class="formInput"  type="text" minlength="10" placeholder="Email *">
+                <span class="fMess"></span>
+            </div>
+            <p>Giới tinh</p>
+            <div class="input">
+                <div class="sexs">
+                <div class="sex">
+                <input type="radio" name="gioitinh" value="nu">
+                <div>Nam</div>
+                </div>
+                <div class="sex">
+                <input type="radio" name="gioitinh" value="nu">
+                <div>Nữ</div>
+                </div>
+                </div>
+            </div>
+            <p>Số điện thoại</p>
+            <div class="input">
+                <input id="phone-number" class="formInput"  type="number" min="10" placeholder="Số điện thoại *">
+                <span class="fMess"></span>
+            </div>
+            <p>Địa chỉ</p>
+            <div class="input">
+                <input id="address" class="formInput"  type="text" minlength="10" placeholder="Địa chỉ *">
+                <span class="fMess"></span>
+            </div>
+            
+                <label>
+                    <input type="checkbox" name="dieu khoan" required="required">Tôi đã đọc và đồng ý<a href="#">điều khoản</a>sử dụng
+                </label>
+            
+            <div class="input">
+                <input type="submit" value="Đăng kí tài khoản">
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+    <script src="../javascript/Login.js"></script>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

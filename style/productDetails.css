@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+.distance{
+    height: 80px;
+}
+body{
+    margin: 0 auto;
+    width: 1198px;
+    background-color: #eee;
+}
+.section{
+    padding: 40px 0;
+}
+:root{
+    /* mau co thuoc tinh nhet nhat */
+    --clr-position: #ddd;
+    /* mau co cua thanh header hien logo va navigation, them phan ending ben duoi */
+    --clr-heaer-nd-end: #06283D;
+    /* mau trang cua tat ca loai chu trong body */
+    --clr-text: #fff;
+    --clr-text-content: #111;
+    /* mau cua logo va phan gia san pham */
+    --clr-logo-price: #ff0157;
+    /* mau cua thanh navigation va chu de cua phan ending */
+    --clr-nav-end: #47B5FF;
+    /* mau cua loai san pham */
+    --clr-menu: #1363DF;
+    --clr-coment: #00483d;
+}
+.hei{
+    height: 362px;
+}
+.hei-img{
+    height: 540px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s;
+    background-color: var(--clr-heaer-nd-end);
+}
+header .logo{
+    color: var(--clr-text);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    line-height: 0.5;
+}
+header .logo .logo-phu{
+    margin-left: 16px;
+    color: var(--clr-logo-price);
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: 300;
+}
+header .navigation li a:hover{
+    color: var(--clr-nav-end);
+}
+
+/* product-details */
+
+.navbarok nav{
+    background-color: var(--clr-position);
+}
+.title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-text-content);
+}
+.product-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-details .productPrice{
+    width: 513px;
+}
+.product-details .title h2{
+    font-size: 20px;
+}
+.product-details .imgPhone{
+    padding-top: 15px;
+    width: 386px;
+}
+.product-details .imgPhone .prev{
+    background-color: var(--clr-position);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto 20px;
+}
+.product-details .imgPhone .next{
+    background-color: var(--clr-position);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto 20px;
+}
+.product-details .imgPhone ol li{
+    background-color: var(--clr-position);
+}
+.product-details .productPrice .text b{
+    color: var(--clr-logo-price);
+    font-size: 25px;
+}
+.product-details .productPrice .freeShip{
+    background-color: var(--clr-coment);
+    height: 34px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px #111 ;
+}
+.product-details .productPrice .freeShip p{
+    color: var(--clr-text);
+    line-height: 2;
+}
+.product-details .productPrice .buying a:first-child{
+    background-color: var(--clr-logo-price);
+    color: var(--clr-text);
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 5%;
+    font-weight: 600;
+}
+.product-details .productPrice .buying a:nth-child(2){
+    background-color: var(--clr-menu);
+    color: var(--clr-text);
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 5%;
+    font-weight: 600;
+}
+.product-details .productPrice .buying b,
+.product-details .productPrice .buying h2,
+.product-details .productPrice .buying img{
+    display: none;
+}
+.product-content .contents{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-content .contents .content-texts{
+    background-color: var(--clr-text);
+    width: 800px;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+.product-content .contents .content-imgs{
+    background-color: var(--clr-text);
+    width: 380px;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+/* similar-product */
+.similar-product .contents{
+    background-color: var(--clr-text);
+    width: 1200px;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+}
+.similar-product .content{
+    width: 180px;
+    margin-left: 40px;
+}
+.similar-product .content b{
+    display: block;
+}
+.similar-product .content .clr{
+    color: var(--clr-logo-price);
+}
+/* comment */
+.comment .contents{
+    background-color: var(--clr-text);
+    width: 1200px;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+.comment .contents h3{
+    color: var(--clr-text-content);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contact .input{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact .input textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: var(--clr-text-content);
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contact .input input{
+    border: 1px solid #555;
+    padding: 10px;
+    color: var(--clr-text-content);
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contact .input input[type="submit"]{
+    font-size: 1em;
+    color: var(--clr-text);
+    background-color: var(--clr-logo-price);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+}
+.contact .input input:hover[type="submit"]{
+    color: var(--clr-text-content);
+}
+#magnifying_area{
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    position: relative;
+}
+#magnifying_img{
+    max-width: 100%;
+    min-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+/*comment-ok */
+.comment-ok{
+    background-color: var(--clr-text);
+    width: 1200px;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+.comment-ok .content{
+    margin-top: 40px;
+}
+.comment-ok .content .box{
+    margin: 20px;
+    padding: 40px;
+}
+.comment-ok .content .box .img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.comment-ok .content .box .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.comment-ok .content .box .text{
+    text-align: left;
+}
+.comment-ok .content .box .text i{
+    color: var(--clr-logo-price);
+}
+.comment-ok .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+.comment-ok .content .box .text h3{
+    margin-top: 20px;
+    font-size: 1em;
+    color: var(--clr-coment);
+    font-weight: 600;
+}
+.comment-ok .content .box .text h4{
+    margin-top: 20px;
+    font-size: 1em;
+    color: var(--clr-position);
+}
+@media (max-width: 990px){
+    .navbarok{
+        width: 590px;
+    }
+    .comment-ok{
+        width: 590px;
+    }
+    .comment .contents{
+        width: 590px;
+    }
+    .similar-product .contents{
+        width: 590px;
+    }
+    .product-content .contents .content-imgs{
+        width: 590px;
+    }
+    .product-content .contents .content-texts .img-nn{
+        width: 550px;
+        padding-bottom: 20px;
+    }
+    .product-content .contents{
+        width: 620px;
+    }
+    .product-content .contents .content-texts{
+        width: 610px;
+        margin-bottom: 40px;
+    }
+    .product-details{
+        width: 610px;
+    }
+    .product-details .imgPhone{
+        margin-bottom: 20px;
+    }
+    header{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--clr-text);
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .icon i{
+        line-height: 2.5;
+        color: var(--clr-logo-price);
+    }
+    .icon{
+        display: block;
+        position: relative;
+        width: 40px;
+        font-size: 20px; 
+    }
+}

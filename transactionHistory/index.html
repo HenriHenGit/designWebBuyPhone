@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/fontawesome-free-5.8.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">MaiCG<div class="logo-phu">technology</div></a>
+        <div class="icon" onclick="toggleMenu();"><i class="fas fa-align-justify"></i></div>
+        <ul class="navigation">
+            <li><a href="../index.html" onclick="toggleMenu();">Trang chủ</a></li>
+            <li><a href="../index.html#menu" onclick="toggleMenu();">Loại sản phẩm</a></li>
+            <li><a href="../index.html#product" onclick="toggleMenu();">Sản phẩm</a></li>
+            <li><a href="../carts/index.html" onclick="toggleMenu();"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+            <li><a href="./index.html" onclick="toggleMenu();">Lịch sử giao dịch</a></li>
+            <li><a href="../logIn/index.html" onclick="toggleMenu();">Đăng nhập</a></li>
+        </ul>
+    </header>
+    
+    <div class="distance"></div>
+    <div class="distance"></div>
+
+    <div id="transaction-history" class="transaction-history">
+        <div class="transactions">
+            <div class="transaction">
+                <div class="sever">
+                    <ul>
+                        <li>Mã đơn hàng</li>
+                        <li>STT</li>
+                        <li>Ngày đặt</li>
+                        <li>Tổng sản phẩm</li>
+                        <li>Tổng tiền</li>
+                        <li>Trạng thái</li>
+                    </ul>
+                </div>
+                <div class="sp">
+                    <ul>
+                        <li>
+                          <form action="a" name="transaction">
+                            <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">
+                                #0306211244
+                            </button>
+                              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Thông tin đơn hàng</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="../img/dt10.png" class="height" alt="">
+                                      <div class="text">
+                                        <h4> Điện thoại di động Xiaomi 12 - Chính hãng
+                                        </h4>
+                                        <b>17,150,000 ₫</b>
+                                        <s>19,990,000 ₫ </s>
+                                        <p>Số lượng: 1</p>
+                                        <p>Thành tiền: 17.150.000đ | Freeship: 0đ</p>
+                                        <p>Tổng tiền:  17.150.000đ</p>
+                                        <p>Thông tin người đặt: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aut consectetur. | Ngày giờ đặt 12:00pm, 8/2/2022 | Ngày giờ duyệt: 16:00pm, 8/2/2022 | Ngày giờ giao: 7:00am, 10/2/2022 | Ngày giờ nhận: 8:00am, 10/2/2022</p>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+                                      <button type="button" class="btn btn-primary">Xác nhận</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                        </li>
+                        <li>1</li>
+                        <li>8/2/2022</li>
+                        <li>1</li>
+                        <li>17.150.000<span>đ</span></li>
+                        <li>
+                            <a href="#" class="badge badge-success">Đã duyệt</a>
+                            <a href="#" class="badge badge-primary">Đang xử lí</a>
+                            <a href="#" class="badge badge-danger">Hủy đơn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sp">
+                    <ul>
+                        <li>
+                          <form action="a" name="transaction">
+                            <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">
+                                #0306211243
+                            </button>
+                              <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Thông tin đơn hàng</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="../img/dt10.png" class="height" alt="">
+                                      <div class="text">
+                                        <h4> Điện thoại di động Xiaomi 12 - Chính hãng
+                                        </h4>
+                                        <b>17,150,000 ₫</b>
+                                        <s>19,990,000 ₫ </s>
+                                        <p>Số lượng: 1</p>
+                                        <p>Thành tiền: 17.150.000đ | Freeship: 0đ</p>
+                                        <p>Tổng tiền:  17.150.000đ</p>
+                                        <p>Thông tin người đặt: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aut consectetur. | Ngày giờ đặt 12:00pm, 8/2/2022 | Ngày giờ duyệt: 16:00pm, 8/2/2022 | Ngày giờ giao: 7:00am, 10/2/2022 | Ngày giờ nhận: 8:00am, 10/2/2022</p>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+                                      <button type="button" class="btn btn-primary">Xác nhận</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                        </li>
+                        <li>1</li>
+                        <li>8/3/2021</li>
+                        <li>1</li>
+                        <li>17.150.000<span>đ</span></li>
+                        <li>
+                            <a href="#" class="badge badge-info">Đang giao hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sp">
+                    <ul>
+                        <li>
+                          <form action="a" name="transaction">
+                            <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">
+                                #0306211242
+                            </button>
+                              <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Thông tin đơn hàng</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="../img/dt10.png" class="height" alt="">
+                                      <div class="text">
+                                        <h4> Điện thoại di động Xiaomi 12 - Chính hãng
+                                        </h4>
+                                        <b>17,150,000 ₫</b>
+                                        <s>19,990,000 ₫ </s>
+                                        <p>Số lượng: 1</p>
+                                        <p>Thành tiền: 17.150.000đ | Freeship: 0đ</p>
+                                        <p>Tổng tiền:  17.150.000đ</p>
+                                        <p>Thông tin người đặt: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aut consectetur. | Ngày giờ đặt 12:00pm, 8/2/2022 | Ngày giờ duyệt: 16:00pm, 8/2/2022 | Ngày giờ giao: 7:00am, 10/2/2022 | Ngày giờ nhận: 8:00am, 10/2/2022</p>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+                                      <button type="button" class="btn btn-primary">Xác nhận</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                        </li>
+                        <li>1</li>
+                        <li>3/1/2021</li>
+                        <li>1</li>
+                        <li>17.150.000<span>đ</span></li>
+                        <li>
+                            <a href="#" class="badge badge-warning">Hoàn thành</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sp">
+                    <ul>
+                        <li>
+                          <form action="a" name="transaction">
+                            <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">
+                                #0306211241
+                            </button>
+                              <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Thông tin đơn hàng</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="../img/dt10.png" class="height" alt="">
+                                      <div class="text">
+                                        <h4> Điện thoại di động Xiaomi 12 - Chính hãng
+                                        </h4>
+                                        <b>17,150,000 ₫</b>
+                                        <s>19,990,000 ₫ </s>
+                                        <p>Số lượng: 1</p>
+                                        <p>Thành tiền: 17.150.000đ | Freeship: 0đ</p>
+                                        <p>Tổng tiền:  17.150.000đ</p>
+                                        <p>Thông tin người đặt: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aut consectetur. | Ngày giờ đặt 12:00pm, 8/2/2022 | Ngày giờ duyệt: 16:00pm, 8/2/2022 | Ngày giờ giao: 7:00am, 10/2/2022 | Ngày giờ nhận: 8:00am, 10/2/2022</p>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+                                      <button type="button" class="btn btn-primary">Xác nhận</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                        </li>
+                        <li>1</li>
+                        <li>1/1/2021</li>
+                        <li>1</li>
+                        <li>17.150.000<span>đ</span></li>
+                        <li>
+                            <a href="#" class="badge badge-secondary">Đã hủy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/transactionHistory.js"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../vendor/bootstrap-4.3.1-dist/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
